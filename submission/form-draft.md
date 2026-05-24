@@ -18,6 +18,21 @@ The Infinity AI BuildFest 2026
 ### Team
 Fintant
 
+### Team Members (4 + 1 open)
+
+| Name | Role | Country | Mode | Eligibility flag |
+|---|---|---|---|---|
+| **Engr Md Ferdous Alam** | Team Leader / Project Coordinator | 🇧🇩 Bangladesh | Physical (in-person) | — |
+| **Faiyad Irfan Hares** | Backend / Database / Scraper Engineer | 🇨🇦 Canada | Virtual (online) | **NRB** |
+| **Shanta Khatun** | UI/UX / Frontend Developer + Presentation/Communication Lead | 🇧🇩 Bangladesh | Physical (in-person) | **Female** |
+| **Abdullah Al Masum** | Business Analyst / Data Scientist | 🇧🇩 Bangladesh | Physical (in-person) | — |
+| *(5th slot open)* | Clinical Advisor — target: **Dr. Al Muktafi Saadi**, MBBS, PGT (Pediatrics), PGPN (Boston, USA), Japan Bangladesh Friendship Hospital, Dhaka | 🇧🇩 Bangladesh | TBD | — |
+
+**Pre-judgment team eligibility: +6 / 7 pts**
+- Team size: 4 members → +4 (cap 5; +1 more if Dr. Saadi confirms as 5th)
+- NRB bonus: 1 NRB (Faiyad) → +1
+- Female bonus: 1 female (Shanta) → +1
+
 ### Phase
 Preliminary Submission (Due: May 30, 2026, 11:59 PM GMT+6)
 
@@ -546,7 +561,7 @@ Form's separate **AI Depth Score (0/110 in-form scoring)** also moves meaningful
 - **Contextual RAG (+5)**: not implemented; would require Anthropic's per-chunk context-prefix work we haven't done.
 - **Graph RAG (+5)**: not implemented; would need a knowledge graph layer we don't have.
 - **n8n / Ollama / local LLMs (~10 pts)**: not used; chasing these would force architecture changes that hurt the clinical-credibility story.
-- **5th team member (+1)**: depends on whether you have one to add.
+- **5th team member (+1)**: open slot — recruiting **Dr. Al Muktafi Saadi** (pediatrician, Japan Bangladesh Friendship Hospital, Dhaka) as Clinical Advisor. Outreach sent 2026-05-25; confirmation pending. Adding him secures +1 here AND adds clinical-validation weight to the official 100-pt rubric (Ethics + Impact dimensions).
 - **Figma (+1)**: no Figma was used; UI built directly in code via Claude Code Artifacts.
 - **Agent frameworks (+7)**: intentionally not used — clinical decision-support needs deterministic behavior, not LLM-driven agent loops.
 
