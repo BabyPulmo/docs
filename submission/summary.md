@@ -1,8 +1,8 @@
-# SHISHUKANTHO
+# BABY PULMO
 
 **"Child's Voice" — AI Pediatric Cough Diagnostic for Rural Bangladesh**
 
-**Track:** HealthTech (AI-Augmented Public & Maternal Health Systems)  •  **Team Lead:** [your name]  •  **NRB Advisor:** [name + role]  •  **Demo:** [Vercel URL]  •  **Code:** [GitHub URL]
+**Track:** HealthTech (AI-Augmented Public & Maternal Health Systems)  •  **Team Lead:** [your name]  •  **NRB Advisor:** [name + role]  •  **Demo:** https://babypulmo.com  •  **Code:** https://github.com/Shishukantho/babypulmo
 
 ---
 
@@ -20,7 +20,7 @@ Eight-layer AI-native system matching the BuildFest reference architecture. (1) 
 
 ## Demo
 
-Caregiver sends a 30-second cough recording to WhatsApp → AI classifies in **<10 seconds** with confidence + Grad-CAM heatmap → Claude generates Bangla audio guidance grounded in WHO IMCI → if severity rule triggers, automatic CHW alert with audio attachment + GPS → CHW dashboard receives ranked alert. Live demo URL: **[Vercel URL]**. Open source code: **[GitHub URL]**.
+Caregiver sends a 30-second cough recording to WhatsApp → AI classifies in **<10 seconds** with confidence + Grad-CAM heatmap → Claude generates Bangla audio guidance grounded in WHO IMCI → if severity rule triggers, automatic CHW alert with audio attachment + GPS → CHW dashboard receives ranked alert. Live demo URL: **https://babypulmo.com**. Open source code: **https://github.com/Shishukantho/babypulmo**.
 
 ## Scalability Roadmap
 
@@ -40,7 +40,7 @@ Caregiver sends a 30-second cough recording to WhatsApp → AI classifies in **<
 
 ## Global Readiness / NRB Collaboration
 
-Architecture is cloud-native and language-agnostic. **TAM:** 730M U5 children globally; **SAM:** 250M in South Asia + Sub-Saharan Africa where pneumonia mortality is concentrated. **Pfizer acquired adult cough-AI company ResApp Health for AUD $179M (USD ~$120M) in August 2022** — same scientific category, validated commercial precedent. ShishuKantho is the LMIC-deployable, Bangla-first, pediatric-focused version. **NRB Advisor: [name, role, affiliation]** — providing architecture review and clinical guidance.
+Architecture is cloud-native and language-agnostic. **TAM:** 730M U5 children globally; **SAM:** 250M in South Asia + Sub-Saharan Africa where pneumonia mortality is concentrated. **Pfizer acquired adult cough-AI company ResApp Health for AUD $179M (USD ~$120M) in August 2022** — same scientific category, validated commercial precedent. Baby Pulmo is the LMIC-deployable, Bangla-first, pediatric-focused version. **NRB Advisor: [name, role, affiliation]** — providing architecture review and clinical guidance.
 
 ## Contact
 

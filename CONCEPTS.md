@@ -2,13 +2,13 @@
 
 Comprehensive deep-dive on all 22 concepts evaluated for the BuildFest. Each entry covers problem (with specific numbers), solution, AI-native architecture, market sizing (TAM/SAM/SOM), and the rationale for its judged-score ceiling on the BuildFest's 100-point rubric (Innovation 20 + Tech 20 + Business 20 + Impact 20 + Scalability 10 + Presentation 10).
 
-**Selected for BuildFest 2026: #10 ShishuKantho (HealthTech, ceiling 86–96).** See `EXECUTION_PLAN.md` for the execution plan.
+**Selected for BuildFest 2026: #10 Baby Pulmo (HealthTech, ceiling 86–96).** See `EXECUTION_PLAN.md` for the execution plan.
 
 ## Ranking by combined-criteria score ceiling
 
 | Rank | # | Project | Track | Ceiling |
 |---|---|---|---|---|
-| 1 | 10 | **ShishuKantho** ← SELECTED | HealthTech | **86–96** |
+| 1 | 10 | **Baby Pulmo** ← SELECTED | HealthTech | **86–96** |
 | 2 | 11 | JoldhuiAI | E-Commerce | 85–94 |
 | 3 | 15 | DariyaShiksha | EdTech | 84–94 |
 | 4 | 1 | MaaSathi | HealthTech | 83–93 |
@@ -177,7 +177,7 @@ Comprehensive deep-dive on all 22 concepts evaluated for the BuildFest. Each ent
 
 ---
 
-## 10. ShishuKantho — AI Pediatric Cough/Cry Voice Diagnostic (HealthTech) — ceiling 86–96 ⭐ SELECTED
+## 10. Baby Pulmo — AI Pediatric Cough/Cry Voice Diagnostic (HealthTech) — ceiling 86–96 ⭐ SELECTED
 
 **Problem.** Pneumonia kills 740,000 children under 5 globally per year — the #1 killer of young children. Bangladesh: ~25,000 child deaths/year from acute respiratory infections; 63% of Bangladeshi children with pneumonia are NOT taken to a qualified provider (BDHS 2022). Detection requires stethoscope + trained doctor; rural Bangladesh has ~1 doctor per 8,000 people. Time-to-care averages 36+ hours from symptom onset.
 

@@ -1,4 +1,4 @@
-# THE INFINITY AI BUILDFEST 2026 — ShishuKantho Execution Plan
+# THE INFINITY AI BUILDFEST 2026 — Baby Pulmo Execution Plan
 
 ## Context
 
@@ -8,7 +8,7 @@ User registered for THE INFINITY AI BUILDFEST 2026 (BRAC University, Dhaka — J
 
 **Target score:** 86–96 / 100 across the 6-criterion BuildFest rubric (Innovation 20, Technical Execution 20, Business Model 20, Real-World Impact 20, Scalability 10, Presentation 10).
 
-## Locked-in Concept: ShishuKantho
+## Locked-in Concept: Baby Pulmo
 
 **Track:** HealthTech (AI-Augmented Public & Maternal Health Systems)
 
@@ -97,7 +97,7 @@ Bangla voice-first WhatsApp AI that listens to a child's cough through any Andro
 
 ```
 /Users/mdferdousalam/Documents/competition/
-├── shishukantho/
+├── babypulmo/
 │   ├── app/
 │   │   ├── api/
 │   │   │   ├── webhook/whatsapp/route.ts
@@ -127,7 +127,7 @@ Bangla voice-first WhatsApp AI that listens to a child's cough through any Andro
 ## 1-Page Project Summary (Draft)
 
 ```
-SHISHUKANTHO
+BABY PULMO
 "Child's Voice" — AI Pediatric Cough Diagnostic for Rural Bangladesh
 TRACK: HealthTech | TEAM: [your name] | NRB Advisor: [name]
 
@@ -187,11 +187,11 @@ CONTACT. [your name] · klikk.ai.new@gmail.com · [phone]
 [VISUAL: WHO stat 740K/year; rural Bangladesh footage; baby coughing audio]
 
 **0:30–1:00 — SOLUTION**
-> "ShishuKantho — 'Child's Voice' — is a Bangla AI on WhatsApp that listens to a child's cough through any Android phone and tells the mother, in her own language, whether her baby has pneumonia. In 10 seconds. For free. No app to download. Just send a voice note. If it's serious, we automatically alert the nearest community health worker with the recording, the location, and the severity. We don't replace doctors — we get the child to one in time."
+> "Baby Pulmo — 'Child's Voice' — is a Bangla AI on WhatsApp that listens to a child's cough through any Android phone and tells the mother, in her own language, whether her baby has pneumonia. In 10 seconds. For free. No app to download. Just send a voice note. If it's serious, we automatically alert the nearest community health worker with the recording, the location, and the severity. We don't replace doctors — we get the child to one in time."
 [VISUAL: WhatsApp UI showing voice note → AI reply playing Bangla audio]
 
 **1:00–2:00 — DEMO**
-> "Here's exactly how it works. Rashida's eight-month-old Amir starts coughing at two in the morning. Rashida holds her phone near Amir and records 30 seconds. She sends it to ShishuKantho on WhatsApp. Behind the scenes, we run the audio through Wav2Vec2 — a research-grade cough acoustic AI fine-tuned on the Coswara South Asian dataset. It returns 'pneumonia, 87 percent confidence' with this spectrogram heatmap showing exactly which acoustic features triggered the classification. Our RAG layer retrieves the matching WHO IMCI severity protocol. Claude generates a Bangla audio reply telling Rashida the nearest clinic and that we're alerting CHW Salma. Salma's WhatsApp pings 12 seconds later with the audio and Rashida's location attached. Time from cough to action: under one minute."
+> "Here's exactly how it works. Rashida's eight-month-old Amir starts coughing at two in the morning. Rashida holds her phone near Amir and records 30 seconds. She sends it to Baby Pulmo on WhatsApp. Behind the scenes, we run the audio through Wav2Vec2 — a research-grade cough acoustic AI fine-tuned on the Coswara South Asian dataset. It returns 'pneumonia, 87 percent confidence' with this spectrogram heatmap showing exactly which acoustic features triggered the classification. Our RAG layer retrieves the matching WHO IMCI severity protocol. Claude generates a Bangla audio reply telling Rashida the nearest clinic and that we're alerting CHW Salma. Salma's WhatsApp pings 12 seconds later with the audio and Rashida's location attached. Time from cough to action: under one minute."
 [VISUAL: live screen recording — cough sample → API → classification → heatmap → Bangla audio → CHW dashboard alert]
 
 **2:00–2:30 — AI APPROACH**
@@ -199,7 +199,7 @@ CONTACT. [your name] · klikk.ai.new@gmail.com · [phone]
 [VISUAL: architecture diagram; citation overlays — JAMA Pediatrics 2018, Pfizer/ResApp, WHO IMCI]
 
 **2:30–3:00 — IMPACT & NEXT STEP**
-> "Phase one: pilot with BRAC in Bogura — one thousand children, validate accuracy in the field, BMRC ethics review. Phase two: 15 million Bangladeshi children under five, contracted through DGHS National Pneumonia Programme. Phase three: India, Pakistan, Nigeria, Indonesia — same architecture, new TTS language. 730 million children globally. SDG 3.2: end preventable under-five deaths. The science is proven. The infrastructure is cheap. The phone is already in her hand. Now we just need to listen. Ami ShishuKantho. Amader shahajjo korun shishu der bachate."
+> "Phase one: pilot with BRAC in Bogura — one thousand children, validate accuracy in the field, BMRC ethics review. Phase two: 15 million Bangladeshi children under five, contracted through DGHS National Pneumonia Programme. Phase three: India, Pakistan, Nigeria, Indonesia — same architecture, new TTS language. 730 million children globally. SDG 3.2: end preventable under-five deaths. The science is proven. The infrastructure is cheap. The phone is already in her hand. Now we just need to listen. Ami Baby Pulmo. Amader shahajjo korun shishu der bachate."
 [VISUAL: roadmap; SDG 3 logo; NRB advisor headshot; logo + contact]
 
 ## Submission Checklist (May 15, 2026)
