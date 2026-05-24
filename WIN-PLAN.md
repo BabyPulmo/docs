@@ -9,6 +9,28 @@
 
 ---
 
+## 🎯 Quick issue queues — bookmark yours
+
+> Every task in this plan is a GitHub issue. Click yours; work it; close it.
+
+- **Master board** (pinned in babypulmo): https://github.com/BabyPulmo/babypulmo/issues/22
+- **Ferdous (Lead + Deploy):**
+  - Code: https://github.com/BabyPulmo/babypulmo/issues?q=is%3Aopen+label%3Aowner%3Aferdous
+  - Strategy: https://github.com/BabyPulmo/discussion/issues?q=is%3Aopen+label%3Aowner%3Aferdous
+  - CLI: `gh issue list -R BabyPulmo/babypulmo -l owner:ferdous`
+- **Faiyad (Backend, NRB):** https://github.com/BabyPulmo/babypulmo/issues?q=is%3Aopen+label%3Aowner%3Afaiyad
+  - CLI: `gh issue list -R BabyPulmo/babypulmo -l owner:faiyad`
+- **Shanta (UI + Presentation):** https://github.com/BabyPulmo/babypulmo/issues?q=is%3Aopen+label%3Aowner%3Ashanta
+  - CLI: `gh issue list -R BabyPulmo/babypulmo -l owner:shanta`
+- **Abdullah (Business + Data):** https://github.com/BabyPulmo/discussion/issues?q=is%3Aopen+label%3Aowner%3Aabdullah
+  - CLI: `gh issue list -R BabyPulmo/discussion -l owner:abdullah`
+
+**Phase filters:**
+- Phase 1 only: append `+milestone:%22Phase+1%3A+Preliminary+%282026-05-30%29%22` to any link
+- Phase 2 only: `+milestone:%22Phase+2%3A+Finals+%282026-06-12%29%22`
+
+---
+
 ## Team
 
 | Member | Role | Country | Mode | Owns |
