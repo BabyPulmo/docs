@@ -47,10 +47,10 @@ Total effort: ~30 person-hours.
 
 - [x] **Day 1** Send Dr. Saadi outreach (paste from `outreach/dr-saadi-email.md`). LinkedIn DM first; email when address found.
 - [x] **Day 1** Commit + push Docker stack files (`babypulmo/deploy/`).
-- [ ] **Day 2** Provision VPS — **Hetzner CX22 Helsinki €4.50/mo** or **DigitalOcean Singapore $6/mo** (Singapore preferred for BD latency, 4GB RAM minimum).
-- [ ] **Day 3** SSH in, install Docker + Compose, clone `BabyPulmo/babypulmo`, fill `.env.production`, run `./deploy/deploy.sh up`. See `babypulmo/deploy/DEPLOY-VPS.md`.
+- [x] **Day 1** VPS already provisioned with Ubuntu + Docker + nginx.
+- [ ] **Day 2** Clone `BabyPulmo/babypulmo` to `/opt/babypulmo`; fill `.env.production`; run `./deploy/deploy.sh up`; `./deploy/deploy.sh sync-nginx`. See `babypulmo/deploy/DEPLOY-VPS.md`.
 - [ ] **Day 3** Paste full form content (all tabs) from `submission/form-draft.md`. Check **Variable/Semantic Chunking** (+3). Do NOT check Contextual/Graph RAG. Paste YouTube URL once Shanta delivers.
-- [ ] **Day 4** Point babypulmo.com A record at VPS IP. Verify HTTPS via Caddy auto-SSL. Smoke-test: landing + `/docs` + `/chw` reachable.
+- [ ] **Day 3–4** Point babypulmo.com A record at VPS IP; once DNS resolves, run `sudo certbot --nginx -d babypulmo.com -d www.babypulmo.com`. Smoke-test: landing + `/docs` + `/chw` over HTTPS.
 - [ ] **Day 5** Add uptime monitoring. Full form pre-flight (every tab). Coordinate Dr. Saadi outcome.
 - [ ] **2026-05-30** Submit form **by 6pm GMT+6** (5+ hour deadline buffer).
 
@@ -58,7 +58,7 @@ Total effort: ~30 person-hours.
 
 - [ ] **Day 2** Audit `app/api/webhook/whatsapp/route.ts` — remove any Twilio remnants; verify Meta Cloud API HMAC signature path is correct.
 - [ ] **Day 3** Harden `lib/rag.ts` — replace zero-vector embedding fallback with a hard error in production; add retry-on-429 to OpenAI embedding call.
-- [ ] **Day 4** Build `app/api/health/route.ts` returning `{db, classifier, tts}` health JSON for Caddy + Compose health checks.
+- [ ] **Day 4** Build `app/api/health/route.ts` returning `{db, classifier, tts}` health JSON for nginx + Compose health checks.
 - [ ] **Day 4** Polish webhook signed-URL flow for caregiver audio upload (Supabase Storage path).
 - [ ] **Day 5** Prep Phase 2 — outline `colab/train_wav2vec2.py` runbook + `scripts/imci-scrape.ts` skeleton.
 
@@ -206,7 +206,7 @@ Judges punish fabrication harder than missing optional bonuses. The submission's
 | NGO LOIs: no response | High | Outreach itself becomes pitch story |
 | babypulmo.com DNS issues | Low | Form's "Live Demo" field accepts raw VPS IP |
 | Faiyad timezone gap | Med | Async GitHub Issues; daily 9pm BDT sync = 11am ET |
-| VPS unreachable in finals | Med | Caddy auto-restart + recorded backup demo |
+| VPS unreachable in finals | Med | Docker `restart: unless-stopped` + nginx auto-restart via systemd + recorded backup demo |
 | Ferdous bottleneck on deploy | Med | `DEPLOY-VPS.md` is full enough that any teammate can take over |
 
 ---
