@@ -175,7 +175,7 @@ For each: trade-secret protection requires (a) marking it confidential, (b) limi
 
 ### Defensive publication — free protection
 
-The public GitHub repo `Shishukantho/babypulmo` (created earlier this session) is *itself* a defensive publication. Every line of code, every architecture choice in `ARCHITECTURE.md`, every cost decision in `COSTS.md` — all of it is **prior art as of the day it was pushed**. That blocks competitors from patenting around the techniques *you've published*.
+The public GitHub repo `BabyPulmo/babypulmo` (created earlier this session) is *itself* a defensive publication. Every line of code, every architecture choice in `ARCHITECTURE.md`, every cost decision in `COSTS.md` — all of it is **prior art as of the day it was pushed**. That blocks competitors from patenting around the techniques *you've published*.
 
 Worth doing on top:
 - **arxiv preprint** of the architecture + the rules-gated severity design — costs $0, blocks $$ of competitor patent claims, also builds academic credibility for FDA/CE submissions later.

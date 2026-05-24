@@ -2,7 +2,7 @@
 
 **"Child's Voice" — AI Pediatric Cough Diagnostic for Rural Bangladesh**
 
-**Track:** HealthTech (AI-Augmented Public & Maternal Health Systems)  •  **Team Lead:** [your name]  •  **NRB Advisor:** [name + role]  •  **Demo:** https://babypulmo.com  •  **Code:** https://github.com/Shishukantho/babypulmo
+**Track:** HealthTech (AI-Augmented Public & Maternal Health Systems)  •  **Team Lead:** [your name]  •  **NRB Advisor:** [name + role]  •  **Demo:** https://babypulmo.com  •  **Code:** https://github.com/BabyPulmo/babypulmo
 
 ---
 
@@ -20,7 +20,7 @@ Eight-layer AI-native system matching the BuildFest reference architecture. (1) 
 
 ## Demo
 
-Caregiver sends a 30-second cough recording to WhatsApp → AI classifies in **<10 seconds** with confidence + Grad-CAM heatmap → Claude generates Bangla audio guidance grounded in WHO IMCI → if severity rule triggers, automatic CHW alert with audio attachment + GPS → CHW dashboard receives ranked alert. Live demo URL: **https://babypulmo.com**. Open source code: **https://github.com/Shishukantho/babypulmo**.
+Caregiver sends a 30-second cough recording to WhatsApp → AI classifies in **<10 seconds** with confidence + Grad-CAM heatmap → Claude generates Bangla audio guidance grounded in WHO IMCI → if severity rule triggers, automatic CHW alert with audio attachment + GPS → CHW dashboard receives ranked alert. Live demo URL: **https://babypulmo.com**. Open source code: **https://github.com/BabyPulmo/babypulmo**.
 
 ## Scalability Roadmap
 
