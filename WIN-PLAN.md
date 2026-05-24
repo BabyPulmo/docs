@@ -47,10 +47,12 @@ Total effort: ~30 person-hours.
 
 - [x] **Day 1** Send Dr. Saadi outreach (paste from `outreach/dr-saadi-email.md`). LinkedIn DM first; email when address found.
 - [x] **Day 1** Commit + push Docker stack files (`babypulmo/deploy/`).
-- [x] **Day 1** VPS already provisioned with Ubuntu + Docker + nginx.
+- [x] **Day 1** VPS confirmed: Contabo `vmi2956989`, Ubuntu 24.04.3, Docker 29.1.3, nginx 1.24, certbot 2.9. IPv4 `86.48.31.193`, IPv6 `2605:a142:2295:6989::1`. Other apps (api/cal/pgadmin.fintant.ai) coexist — port 3000 owned by `fintant-backend`, so babypulmo web binds to **127.0.0.1:3010**.
+- [ ] **Day 1–2** Set DNS records per `babypulmo/deploy/DNS-RECORDS.md` (A + AAAA for `@` and `www`). Verify with `dig babypulmo.com +short`.
 - [ ] **Day 2** Clone `BabyPulmo/babypulmo` to `/opt/babypulmo`; fill `.env.production`; run `./deploy/deploy.sh up`; `./deploy/deploy.sh sync-nginx`. See `babypulmo/deploy/DEPLOY-VPS.md`.
+- [ ] **Day 2** Install GitHub self-hosted runner (~10 min, sixth runner on this VPS) per `babypulmo/deploy/RUNNER-SETUP.md`. Once registered, every push to `main` auto-deploys via `.github/workflows/deploy.yml`.
 - [ ] **Day 3** Paste full form content (all tabs) from `submission/form-draft.md`. Check **Variable/Semantic Chunking** (+3). Do NOT check Contextual/Graph RAG. Paste YouTube URL once Shanta delivers.
-- [ ] **Day 3–4** Point babypulmo.com A record at VPS IP; once DNS resolves, run `sudo certbot --nginx -d babypulmo.com -d www.babypulmo.com`. Smoke-test: landing + `/docs` + `/chw` over HTTPS.
+- [ ] **Day 3–4** Once DNS resolves: `sudo certbot --nginx -d babypulmo.com -d www.babypulmo.com`. Smoke-test: landing + `/docs` + `/chw` over HTTPS.
 - [ ] **Day 5** Add uptime monitoring. Full form pre-flight (every tab). Coordinate Dr. Saadi outcome.
 - [ ] **2026-05-30** Submit form **by 6pm GMT+6** (5+ hour deadline buffer).
 
