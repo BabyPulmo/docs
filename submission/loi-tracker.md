@@ -17,7 +17,7 @@
 
 ---
 
-## Finals Fallback Framing
+# Finals Fallback Framing
 
 If no responses are received before finals:
 
