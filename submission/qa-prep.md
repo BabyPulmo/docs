@@ -8,11 +8,11 @@
 
 # Q1 — “What’s your actual accuracy?”
 
-Our target is the published JAMA Pediatrics 2018 benchmark of 84% pediatric pneumonia sensitivity. 
+Our Phase 1 target is the published JAMA Pediatrics 2018 benchmark of 84% pediatric pneumonia sensitivity achieved by ResApp. 
 
-Realistically, we expect early lab performance around 70–78%, with lower field performance initially around 58–68%. 
+Realistically, early lab-stage performance is expected around 70–78%, with lower real-world field performance initially around 58–68% because of background noise and pediatric domain shift. 
 
-That’s why Baby Pulmo is designed as a decision-support system with human-in-the-loop CHW escalation, not an autonomous diagnostic tool.
+That’s why Baby Pulmo is designed as a decision-support and triage system rather than an autonomous diagnostic device. Severe cases are always escalated to a human Community Health Worker.
 
 ## Numbers / References
 
@@ -27,9 +27,11 @@ Reference:
 
 # Q2 — “What’s your regulatory pathway?”
 
-We position Baby Pulmo as a decision-support and triage platform, not a diagnostic device. 
+We intentionally position Baby Pulmo as a decision-support and triage platform, not a fully autonomous diagnostic device. 
 
-Phase 1 starts with BMRC ethics review and a BRAC-supported pilot, with all severe cases escalated to human CHWs.
+Our regulatory path begins with BMRC ethics review and a BRAC-supported pilot in Bangladesh. Every severe-risk case is escalated to a real Community Health Worker, which keeps the system within a safer human-in-the-loop framework similar to the early ResApp deployment model.
+
+This allows us to validate the system responsibly before pursuing more formal medical-device pathways.
 
 ## Numbers / References
 
@@ -45,15 +47,21 @@ References:
 
 # Q3 — “How is this different from Hyfe or Sonde?”
 
-Most competitors focus on adult respiratory monitoring in high-income markets. 
+Most competitors focus on adult respiratory monitoring in high-income healthcare markets and usually depend on standalone smartphone apps. 
 
-Baby Pulmo is pediatric-focused, Bangla-first, WhatsApp-native, and integrated into rural CHW healthcare workflows.
+Baby Pulmo is different because it is:
+- pediatric-focused,
+- Bangla-first,
+- WhatsApp-native,
+- and integrated into Community Health Worker workflows for rural LMIC healthcare systems.
+
+Our strongest advantage is operational integration with real low-resource healthcare delivery, not only the AI model itself.
 
 ## Numbers / References
 
 - Bangla-first deployment
 - WhatsApp-native workflow
-- ~$0.003 interaction cost
+- ~$0.003 projected interaction cost
 
 Reference:
 - submission/competitive-analysis.md
@@ -62,9 +70,14 @@ Reference:
 
 # Q4 — “What’s the exit opportunity here?”
 
-Pfizer acquired cough-AI company ResApp for AUD $179M, proving commercial demand in this category. 
+The respiratory-AI category already has strong commercial precedent. Pfizer acquired cough-AI company ResApp Health for approximately AUD $179M in 2022 after validating adult respiratory diagnostics. 
 
-Our likely pathways are government deployment contracts, NGO partnerships, or strategic acquisition.
+Baby Pulmo is positioned differently:
+- pediatric-focused,
+- LMIC-focused,
+- and integrated into public-health delivery systems.
+
+Potential exit pathways include strategic acquisition, NGO/public-health partnerships, and long-term government healthcare contracts.
 
 ## Numbers / References
 
@@ -79,9 +92,11 @@ References:
 
 # Q5 — “What are your unit economics?”
 
-Our projected infrastructure cost is about $0.003 per interaction because we use lightweight audio inference instead of imaging-scale AI. 
+Our projected infrastructure cost is approximately $0.003 per interaction because the system uses lightweight audio inference rather than imaging-scale AI. 
 
-The business model is NGO and government deployment contracts, not caregiver subscriptions.
+The stack is optimized for low-resource deployment using Modal serverless inference, Supabase, and lightweight Wav2Vec2 processing. 
+
+The business model is based on NGO and government deployment contracts rather than charging caregivers directly.
 
 ## Numbers / References
 
@@ -95,9 +110,11 @@ Reference:
 
 # Q6 — “How do you handle privacy and consent?”
 
-All recordings are opt-in and stored de-identified. 
+All caregiver recordings are opt-in and stored in a de-identified format. 
 
-We maintain immutable audit logs and plan BMRC-reviewed deployment with strict human oversight.
+We maintain immutable audit logs for BMRC review and operational accountability, while avoiding unnecessary personally identifiable information storage. 
+
+Privacy and consent are treated as core infrastructure requirements from day one, not post-launch additions.
 
 ## Numbers / References
 
@@ -113,9 +130,11 @@ References:
 
 # Q7 — “What happens when the AI is wrong?”
 
-The system assumes the AI will sometimes be wrong. 
+The architecture is intentionally designed assuming the model will sometimes be wrong. 
 
-That’s why uncertain inputs are rejected, severe cases are escalated automatically, and human CHWs stay in the loop.
+Uncertain inputs are rejected through confidence gating, and severe-risk cases are automatically escalated to human Community Health Workers with the original audio attached. 
+
+The system behaves more like a smoke detector than an autonomous doctor — false positives are acceptable, but missed severe pediatric cases are not.
 
 ## Numbers / References
 
@@ -130,9 +149,11 @@ Reference:
 
 # Q8 — “Why WhatsApp instead of an app?”
 
-WhatsApp removes app-download friction in rural Bangladesh. 
+WhatsApp dramatically lowers onboarding friction in rural Bangladesh because caregivers already understand voice notes and messaging workflows. 
 
-Caregivers already understand voice notes, making onboarding much faster and cheaper than a standalone app.
+A standalone healthcare app creates storage, literacy, and installation barriers that reduce adoption in low-resource environments. 
+
+WhatsApp-native deployment allows faster caregiver adoption and lower acquisition cost.
 
 ## Numbers / References
 
@@ -148,14 +169,16 @@ References:
 
 # Q9 — “How do you scale to 15 million children?”
 
-The scaling model relies on CHW network multiplication, not centralized hospitals. 
+The scaling model relies on Community Health Worker network multiplication rather than centralized hospital staffing. 
 
-The architecture is lightweight and can expand to other LMICs mainly through language and protocol localization.
+The architecture itself is lightweight and cloud-native, so expansion mainly requires localization of language, TTS, and healthcare protocols. 
+
+After Bangladesh, the same operational model can extend to India, Pakistan, Nigeria, Indonesia, and the Philippines.
 
 ## Numbers / References
 
 - Year-3 target: 15M children
-- LMIC expansion roadmap
+- Multi-country LMIC roadmap
 
 Reference:
 - submission/financials.md
@@ -164,9 +187,11 @@ Reference:
 
 # Q10 — “What if Meta changes WhatsApp policies?”
 
-The platform is channel-agnostic. 
+The platform is intentionally designed to be channel-agnostic. 
 
-WhatsApp is the fastest deployment path today, but the roadmap already includes Telegram, IVR, and SMS fallback options.
+WhatsApp is simply the fastest adoption path today, but the roadmap already includes Telegram, IVR, and SMS fallback options. 
+
+The core value of Baby Pulmo is the respiratory-triage and CHW-escalation infrastructure behind the messaging layer.
 
 ## Numbers / References
 
@@ -180,7 +205,7 @@ References:
 
 ---
 
-# Final Coaching Notes
+# Finals Coaching Notes
 
 ## Strong Framing
 
@@ -200,7 +225,7 @@ Avoid:
 
 # Finals Strategy
 
-- Keep answers under 30 seconds
+- Keep answers around 20–30 seconds
 - Answer directly first
 - Use numbers confidently
 - Admit limitations honestly
