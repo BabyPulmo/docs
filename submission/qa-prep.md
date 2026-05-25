@@ -1,34 +1,25 @@
 # Baby Pulmo — Finals Q&A Preparation
 
-## Purpose
+## Core Framing
 
-This document prepares Baby Pulmo team members for likely hostile or high-pressure finals questions.
-
-Goal:
-- concise 20–30 second oral answers
-- scientifically honest positioning
-- operational credibility
-- investor-grade clarity
-
-Core framing used throughout:
 > Baby Pulmo is an AI-assisted pediatric respiratory triage and decision-support platform, not an autonomous diagnostic device.
 
 ---
 
 # Q1 — “What’s your actual accuracy?”
 
-## Recommended Answer
+## ------------ Answer --------------
 
-Our Phase 1 target is the published JAMA Pediatrics 2018 benchmark of 84% pediatric pneumonia sensitivity achieved by ResApp. 
+Our target is the published JAMA Pediatrics 2018 benchmark of 84% pediatric pneumonia sensitivity. 
 
-Realistically, early lab-stage sensitivity for Baby Pulmo is expected around 70–78%, with lower real-world field performance initially — likely around 58–68% in rural deployment conditions. 
+Realistically, we expect early lab performance around 70–78%, with lower field performance initially around 58–68%. 
 
-That is why the system is designed as a decision-support and triage platform rather than an autonomous diagnostic device. Confidence gating, deterministic severity rules, and mandatory human-in-the-loop CHW escalation are designed to make the system clinically useful even before full-scale validation.
+That’s why Baby Pulmo is designed as a decision-support system with human-in-the-loop CHW escalation, not an autonomous diagnostic tool.
 
 ## Numbers / References
 
-- JAMA Pediatrics 2018 ResApp benchmark: 84% sensitivity
-- Expected v0 lab sensitivity: 70–78%
+- JAMA Pediatrics 2018 benchmark: 84%
+- Expected lab sensitivity: 70–78%
 - Expected field sensitivity: 58–68%
 
 Reference:
@@ -38,46 +29,37 @@ Reference:
 
 # Q2 — “What’s your regulatory pathway?”
 
-## Recommended Answer
+## ------------ Answer --------------
 
-Baby Pulmo intentionally avoids positioning itself as a fully autonomous diagnostic device. 
+We position Baby Pulmo as a decision-support and triage platform, not a diagnostic device. 
 
-Our planned regulatory pathway begins with BMRC ethics review and NGO-supported pilot deployment in Bangladesh. Severe-risk cases are always escalated to a human Community Health Worker, which keeps the system within a decision-support framework similar to the early ResApp deployment strategy.
-
-This substantially lowers regulatory friction while allowing real-world validation before pursuing more formal medical-device pathways.
+Phase 1 starts with BMRC ethics review and a BRAC-supported pilot, with all severe cases escalated to human CHWs.
 
 ## Numbers / References
 
-- BMRC ethics review planned in Phase 1
-- 1,000-child BRAC Bogura pilot
-- Human-in-loop escalation on every severe case
+- BMRC ethics review planned
+- 1,000-child pilot in Bogura
+- Human-in-loop escalation
 
 References:
 - submission/summary.md
-- submission/ip-strategy.md
 - submission/accuracy.md
 
 ---
 
-# Q3 — “How is this different from Hyfe or Sonde Health?”
+# Q3 — “How is this different from Hyfe or Sonde?”
 
-## Recommended Answer
+## ------------ Answer --------------
 
-Most incumbents optimize for adult respiratory monitoring or English-language smartphone apps in high-income healthcare systems. 
+Most competitors focus on adult respiratory monitoring in high-income markets. 
 
-Baby Pulmo instead focuses on:
-- pediatric respiratory triage,
-- Bangla-first interaction,
-- WhatsApp-native deployment,
-- and Community Health Worker escalation workflows for rural LMIC healthcare systems.
-
-Our strongest differentiation is operational integration with low-resource healthcare delivery rather than only the classifier itself.
+Baby Pulmo is pediatric-focused, Bangla-first, WhatsApp-native, and integrated into rural CHW healthcare workflows.
 
 ## Numbers / References
 
 - Bangla-first deployment
 - WhatsApp-native workflow
-- ~$0.003 projected interaction cost
+- ~$0.003 interaction cost
 
 Reference:
 - submission/competitive-analysis.md
@@ -86,24 +68,16 @@ Reference:
 
 # Q4 — “What’s the exit opportunity here?”
 
-## Recommended Answer
+## ------------ Answer --------------
 
-The respiratory-AI category already has strong commercial precedent. Pfizer acquired ResApp Health in 2022 for approximately AUD $179M after validating adult cough-diagnostic AI. 
+Pfizer acquired cough-AI company ResApp for AUD $179M, proving commercial demand in this category. 
 
-Baby Pulmo is positioned differently:
-- pediatric-focused,
-- LMIC-focused,
-- and integrated into public-health delivery systems.
-
-Potential exit pathways include:
-- strategic acquisition,
-- NGO/public-health infrastructure partnerships,
-- or long-term government deployment contracts.
+Our likely pathways are government deployment contracts, NGO partnerships, or strategic acquisition.
 
 ## Numbers / References
 
 - ResApp acquisition: AUD $179M
-- Bangladesh target: 15M under-5 children
+- Bangladesh target: 15M children
 
 References:
 - submission/financials.md
@@ -113,22 +87,16 @@ References:
 
 # Q5 — “What are your unit economics?”
 
-## Recommended Answer
+## ------------ Answer --------------
 
-Our projected infrastructure cost is approximately $0.003 per interaction because the system uses lightweight audio inference instead of imaging-scale AI. 
+Our projected infrastructure cost is about $0.003 per interaction because we use lightweight audio inference instead of imaging-scale AI. 
 
-The stack is intentionally optimized for low-resource deployment using:
-- Modal serverless inference,
-- Supabase,
-- lightweight Wav2Vec2 audio processing,
-- and WhatsApp-native interaction.
-
-The business model is NGO and government deployment contracts rather than charging caregivers directly.
+The business model is NGO and government deployment contracts, not caregiver subscriptions.
 
 ## Numbers / References
 
-- ~$0.003 projected interaction cost
-- Early prototype infra target: ~$7/month VPS-equivalent scale
+- ~$0.003 per interaction
+- ~$7/month prototype infra target
 
 Reference:
 - submission/financials.md
@@ -137,19 +105,17 @@ Reference:
 
 # Q6 — “How do you handle privacy and consent?”
 
-## Recommended Answer
+## ------------ Answer --------------
 
-User recordings are stored de-identified with explicit opt-in consent. 
+All recordings are opt-in and stored de-identified. 
 
-The system maintains immutable audit logs for BMRC review and operational accountability. We intentionally avoid storing unnecessary personally identifiable information, and all severe-case escalation is handled through authorized healthcare workflows.
-
-Privacy and ethics are treated as core infrastructure requirements, not post-launch additions.
+We maintain immutable audit logs and plan BMRC-reviewed deployment with strict human oversight.
 
 ## Numbers / References
 
-- Opt-in consent model
-- Immutable audit log
-- BMRC ethics review pathway
+- Opt-in consent
+- Immutable audit logs
+- BMRC review pathway
 
 References:
 - submission/summary.md
@@ -159,46 +125,36 @@ References:
 
 # Q7 — “What happens when the AI is wrong?”
 
-## Recommended Answer
+## ------------ Answer --------------
 
-The architecture is intentionally designed assuming the model will sometimes be wrong. 
+The system assumes the AI will sometimes be wrong. 
 
-Three safeguards reduce risk:
-- confidence gating rejects uncertain inputs,
-- deterministic severity rules bias toward escalation,
-- and every severe-risk case routes to a real Community Health Worker with the original audio attached.
-
-The system behaves more like a smoke detector than an autonomous doctor — false positives are acceptable, but missed severe pediatric cases are not.
+That’s why uncertain inputs are rejected, severe cases are escalated automatically, and human CHWs stay in the loop.
 
 ## Numbers / References
 
-- Confidence threshold gating
+- Confidence gating
 - Human-in-loop escalation
-- CHW review on every severe case
+- CHW review on severe cases
 
 Reference:
 - submission/accuracy.md
 
 ---
 
-# Q8 — “Why WhatsApp instead of a dedicated app?”
+# Q8 — “Why WhatsApp instead of an app?”
 
-## Recommended Answer
+## ------------ Answer --------------
 
-In Bangladesh and similar LMIC environments, WhatsApp dramatically lowers onboarding friction compared with standalone healthcare apps. 
+WhatsApp removes app-download friction in rural Bangladesh. 
 
-Caregivers already understand voice notes and messaging workflows, while app downloads create:
-- storage friction,
-- literacy barriers,
-- and onboarding drop-off.
-
-WhatsApp-native deployment allows much faster rural adoption and lower caregiver acquisition cost.
+Caregivers already understand voice notes, making onboarding much faster and cheaper than a standalone app.
 
 ## Numbers / References
 
 - Lower caregiver CAC
+- Voice-first onboarding
 - No app-install dependency
-- Voice-first interaction
 
 References:
 - submission/financials.md
@@ -206,47 +162,37 @@ References:
 
 ---
 
-# Q9 — “How do you scale this to 15 million children?”
+# Q9 — “How do you scale to 15 million children?”
 
-## Recommended Answer
+## ------------ Answer --------------
 
-The scaling model depends on Community Health Worker network multiplication rather than centralized hospital staffing. 
+The scaling model relies on CHW network multiplication, not centralized hospitals. 
 
-The architecture itself is lightweight and cloud-native, meaning localization mainly requires:
-- new language TTS,
-- local protocol RAG,
-- and CHW integration.
-
-Bangladesh is the initial deployment market, but the same operational model can extend to India, Pakistan, Nigeria, Indonesia, and the Philippines.
+The architecture is lightweight and can expand to other LMICs mainly through language and protocol localization.
 
 ## Numbers / References
 
-- Year 3 Bangladesh target: 15M children
-- Multi-country LMIC roadmap
+- Year-3 target: 15M children
+- LMIC expansion roadmap
 
 Reference:
 - submission/financials.md
 
 ---
 
-# Q10 — “What happens if Meta changes WhatsApp policies?”
+# Q10 — “What if Meta changes WhatsApp policies?”
 
-## Recommended Answer
+## ------------ Answer --------------
 
-The platform architecture is intentionally channel-agnostic. 
+The platform is channel-agnostic. 
 
-WhatsApp is the fastest adoption path today, but the roadmap already includes:
-- Telegram,
-- IVR fallback,
-- and SMS-based escalation workflows.
-
-The core value is not the messaging platform itself — it is the respiratory-triage and CHW-escalation infrastructure behind it.
+WhatsApp is the fastest deployment path today, but the roadmap already includes Telegram, IVR, and SMS fallback options.
 
 ## Numbers / References
 
-- WhatsApp primary
-- IVR fallback already planned
-- Telegram/SMS extensibility in roadmap
+- WhatsApp primary deployment
+- Telegram/SMS fallback roadmap
+- IVR support planned
 
 References:
 - submission/summary.md
@@ -256,11 +202,9 @@ References:
 
 # Final Coaching Notes
 
-## Most Important Principle
+## Strong Framing
 
-Never oversell the classifier.
-
-Strong framing:
+Use:
 - “decision-support”
 - “triage”
 - “human-in-the-loop”
@@ -274,35 +218,14 @@ Avoid:
 
 ---
 
-# Judge Psychology
+# Finals Strategy
 
-Judges are not expecting:
-- FDA-grade clinical proof,
-- or production-ready deployment.
+- Keep answers under 30 seconds
+- Answer directly first
+- Use numbers confidently
+- Admit limitations honestly
+- Stay calm and concise
 
-They are evaluating:
-- systems thinking,
-- realism,
-- ethical awareness,
-- scalability,
-- and operational understanding.
-
-Honest limitations increase credibility.
-
----
-
-# Rehearsal Checklist
-
-Before finals:
-- rehearse twice minimum,
-- keep answers under 30 seconds,
-- memorize opening lines,
-- avoid technical over-explaining,
-- answer directly first, then elaborate only if asked.
-
-Recommended mock audience:
+Recommended rehearsal:
 - Ferdous
 - Shanta
-
-Goal:
-confident, concise, non-defensive delivery under pressure.
