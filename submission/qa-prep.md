@@ -8,8 +8,6 @@
 
 # Q1 — “What’s your actual accuracy?”
 
-## ------------ Answer --------------
-
 Our target is the published JAMA Pediatrics 2018 benchmark of 84% pediatric pneumonia sensitivity. 
 
 Realistically, we expect early lab performance around 70–78%, with lower field performance initially around 58–68%. 
@@ -29,8 +27,6 @@ Reference:
 
 # Q2 — “What’s your regulatory pathway?”
 
-## ------------ Answer --------------
-
 We position Baby Pulmo as a decision-support and triage platform, not a diagnostic device. 
 
 Phase 1 starts with BMRC ethics review and a BRAC-supported pilot, with all severe cases escalated to human CHWs.
@@ -49,8 +45,6 @@ References:
 
 # Q3 — “How is this different from Hyfe or Sonde?”
 
-## ------------ Answer --------------
-
 Most competitors focus on adult respiratory monitoring in high-income markets. 
 
 Baby Pulmo is pediatric-focused, Bangla-first, WhatsApp-native, and integrated into rural CHW healthcare workflows.
@@ -67,8 +61,6 @@ Reference:
 ---
 
 # Q4 — “What’s the exit opportunity here?”
-
-## ------------ Answer --------------
 
 Pfizer acquired cough-AI company ResApp for AUD $179M, proving commercial demand in this category. 
 
@@ -87,8 +79,6 @@ References:
 
 # Q5 — “What are your unit economics?”
 
-## ------------ Answer --------------
-
 Our projected infrastructure cost is about $0.003 per interaction because we use lightweight audio inference instead of imaging-scale AI. 
 
 The business model is NGO and government deployment contracts, not caregiver subscriptions.
@@ -104,8 +94,6 @@ Reference:
 ---
 
 # Q6 — “How do you handle privacy and consent?”
-
-## ------------ Answer --------------
 
 All recordings are opt-in and stored de-identified. 
 
@@ -125,8 +113,6 @@ References:
 
 # Q7 — “What happens when the AI is wrong?”
 
-## ------------ Answer --------------
-
 The system assumes the AI will sometimes be wrong. 
 
 That’s why uncertain inputs are rejected, severe cases are escalated automatically, and human CHWs stay in the loop.
@@ -143,8 +129,6 @@ Reference:
 ---
 
 # Q8 — “Why WhatsApp instead of an app?”
-
-## ------------ Answer --------------
 
 WhatsApp removes app-download friction in rural Bangladesh. 
 
@@ -164,8 +148,6 @@ References:
 
 # Q9 — “How do you scale to 15 million children?”
 
-## ------------ Answer --------------
-
 The scaling model relies on CHW network multiplication, not centralized hospitals. 
 
 The architecture is lightweight and can expand to other LMICs mainly through language and protocol localization.
@@ -181,8 +163,6 @@ Reference:
 ---
 
 # Q10 — “What if Meta changes WhatsApp policies?”
-
-## ------------ Answer --------------
 
 The platform is channel-agnostic. 
 
