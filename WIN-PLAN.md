@@ -67,7 +67,7 @@ Total effort: ~30 person-hours.
 
 ### Ferdous (~14h) — Lead + Deploy
 
-- [x] **Day 1** Send Dr. Saadi outreach (paste from `outreach/dr-saadi-email.md`). LinkedIn DM first; email when address found.
+- [ ] **Day 1** Send Dr. Saadi outreach (paste from `outreach/dr-saadi-email.md`). LinkedIn DM first; email when address found.
 - [x] **Day 1** Commit + push Docker stack files (`babypulmo/deploy/`).
 - [x] **Day 1** VPS confirmed: Contabo `vmi2956989`, Ubuntu 24.04.3, Docker 29.1.3, nginx 1.24, certbot 2.9. IPv4 `86.48.31.193`, IPv6 `2605:a142:2295:6989::1`. Other apps (api/cal/pgadmin.fintant.ai) coexist — port 3000 owned by `fintant-backend`, so babypulmo web binds to **127.0.0.1:3010**.
 - [ ] **Day 1–2** Set DNS records per `babypulmo/deploy/DNS-RECORDS.md` (A + AAAA for `@` and `www`). Verify with `dig babypulmo.com +short`.
